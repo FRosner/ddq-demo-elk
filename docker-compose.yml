@@ -2,6 +2,12 @@ elasticsearch:
   image: frosner/ddq-demo-elasticsearch
   expose:
     - "9200"
+logstash:
+  image: frosner/ddq-demo-logstash
+  links:
+    - elasticsearch
+  expose:
+    - "5044"
 kibana:
   image: frosner/ddq-demo-kibana
   links:
