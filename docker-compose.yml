@@ -1,3 +1,13 @@
+elasticsearch:
+  image: frosner/ddq-demo-elasticsearch
+  expose:
+    - "9200"
+kibana:
+  image: frosner/ddq-demo-kibana
+  links:
+    - elasticsearch
+  ports:
+    - "5601"
 spark:
   image: frosner/ddq-demo-spark
   links:
