@@ -2,9 +2,7 @@
 
 ## Description
 
-This is a demonstration of how [Drunken Data Quality (DDQ)](https://github.com/FRosner/drunken-data-quality) can work together with Elasticsearch, Logstash and Kibana (ELK) to monitor data quality.
-
-It provides a composition of all required services: ELK, DDQ, a Spark streaming job, and a data generator.
+This is a demonstration of how [Drunken Data Quality (DDQ)](https://github.com/FRosner/drunken-data-quality) can work together with Elasticsearch, Logstash and Kibana (ELK) to monitor data quality. It provides a composition of all required services: ELK, DDQ, a Spark streaming job, and a data generator.
 
 ## Prerequisites
 
@@ -42,11 +40,13 @@ OpenSSL version: OpenSSL 1.0.2f  28 Jan 2016
 ## Usage
 
 1. Check out the repository (or download the zip)
+
    ```
    git clone git@github.com:FRosner/ddq-demo-elk.git && \
    cd ddq-demo-elk
    ```
 2. Launch docker-compose (-d for daemon mode)
+
    ```
    docker-compose up -d
    ```
